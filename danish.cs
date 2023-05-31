@@ -3,7 +3,7 @@
 namespace Lemegeton.Language
 {
 
-    internal class English : Core.Language
+    internal class Danish : Core.Language
     {
 
         public override bool IsDefault => true;
@@ -12,8 +12,31 @@ namespace Lemegeton.Language
         public override string FontDownload => null;
         public override GlyphRangeEnum GlyphRange => GlyphRangeEnum.Undefined;
 
-        public English(State st) : base(st)
+        public Danish(State st) : base(st)
         {
+            #region 1.0.1.6
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM", "(P9s) Automarkør til Levin bold");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/Enabled", "Aktiveret");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/SelfMarkOnly", "Kun selvmarkering");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/AsSoftmarker", "Vis som klientbaserede bløde markører");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/Signs", "Markørkonfiguration");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/Signs/LimitCut2", "Nummer 2");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/Signs/LimitCut4", "Nummer 4");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/Signs/LimitCut6", "Nummer 6");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/Signs/LimitCut8", "Nummer 8");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/Signs/BlueMarker", "Icemeld (Blå markør)");
+            AddEntry("Content/EndwalkerRaids/EwRaidAnabaseios/LevinballAM/Test", "Test tildeling");
+            #endregion
+            #region 1.0.1.5
+            AddEntry("Content/Miscellaneous/Overlays/DotTracker/DotVisuals", "Konfiguration af sporingsvisning");
+            AddEntry("Content/Miscellaneous/Overlays/DotTracker/DotVisuals/BarWidth", "Bredde på timer");
+            AddEntry("Content/Miscellaneous/Overlays/DotTracker/DotVisuals/ItemHeight", "Højde på tracker");
+            AddEntry("Content/Miscellaneous/Overlays/DotTracker/DotVisuals/ShowBar", "Vis timerbjælke");
+            AddEntry("Content/Miscellaneous/Overlays/DotTracker/DotVisuals/ShowIcon", " Vis ikon for statusvirkning");
+            AddEntry("Content/Miscellaneous/Overlays/DotTracker/DotVisuals/ShowTime", "Vis tidværdi");
+            AddEntry("Content/Miscellaneous/Overlays/DotTracker/DotVisuals/ItemOffsetWorld", "Forskydning af sporingsgenstand i verdenskoordinater");
+            AddEntry("Content/Miscellaneous/Overlays/DotTracker/DotVisuals/ItemOffsetScreen", "Forskydning af sporingsgenstand i skærmkoordinater");
+            #endregion
             #region 1.0.1.4
             AddEntry("Content/Miscellaneous/Overlays", "overlejring");
             AddEntry("Content/Miscellaneous/Overlays/Enabled", "Aktiveret");
